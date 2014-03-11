@@ -12,6 +12,9 @@ group :production do
   gem 'rails_12factor'
   gem 'pg'
 end
+
+gem 'yelpster'
+gem 'vacuum'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
