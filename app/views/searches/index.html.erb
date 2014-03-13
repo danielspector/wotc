@@ -1,6 +1,9 @@
 <form action="/searches" method="post">
   <%= token_tag %>
-  <p><label>Query 1 <input type="text" name="search[query1"]></label></p>
-  <p><label>Query 2 <input type="text" name="search[query2"]></label></p>
+  <p><label>Please Enter the Business: <input type="text" name="search[query1"]></label></p>
+  <p><label>Please Enter a City: <input type="text" name="search[query2"]></label></p>
   <input class="btn btn-block btn-lg btn-info" id="submit-button" type="submit" value="Search the Crowds"><br>
 </form>
+
+<p>The Crowd says go to:</p>
+<p><%= @display.name if @display %></p>

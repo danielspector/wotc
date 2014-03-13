@@ -15,8 +15,7 @@ ActiveRecord::Schema.define(version: 20140311163627) do
 
   create_table "searches", force: true do |t|
     t.text     "url"
-    t.text     "query1"
-    t.text     "query2"
+    t.text     "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
