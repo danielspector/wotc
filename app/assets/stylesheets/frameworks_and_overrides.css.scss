@@ -2,3 +2,9 @@
 @import "bootstrap";
 @import "bootstrap/theme";
 @import "flat-ui";
+
+.btn-info {
+  -webkit-transition: none;
+  transition: none;
+  background-color: none;
+}

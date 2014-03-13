@@ -4,6 +4,5 @@ class Search < ActiveRecord::Base
      request = Location.new(term: name, city: location)
      response = client.search(request)
      @result = response["businesses"].sort_by{|i| i["rating"]}.last
-     # @biz_name = @result["name"]
   end
 end

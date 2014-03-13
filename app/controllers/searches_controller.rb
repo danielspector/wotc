@@ -1,12 +1,6 @@
 class SearchesController < ApplicationController
   def index
-  
-    # @name = "barber"
-    # @location = "san francisco"
-    # search = Search.new
-    # @wisdom = search.yelp_api(@name, @location)
     @display = Search.last
-    # binding.pry
   end
 
   def create
@@ -15,11 +9,8 @@ class SearchesController < ApplicationController
     search = Search.new
     @wisdom = search.yelp_api(@name, @location)
     search.name = @wisdom["name"]
+    search.url = @wisdom["url"]
     search.save
     redirect_to searches_path
-  end
-
-  def show
-    @result
   end
 end

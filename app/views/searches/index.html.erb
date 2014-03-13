@@ -6,4 +6,4 @@
 </form>
 
 <p>The Crowd says go to:</p>
-<p><%= @display.name if @display %></p>
+<%= link_to @display.name, @display.url, :target => "_blank" %>
