@@ -17,6 +17,7 @@ group :production do
   gem 'pg'
 end
 
+gem 'thin'
 gem 'yelpster'
 gem 'vacuum'
 # Use SCSS for stylesheets

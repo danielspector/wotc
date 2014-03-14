@@ -5,5 +5,7 @@
   <input class="btn btn-block btn-lg btn-info" id="submit-button" type="submit" value="Search the Crowds"><br>
 </form>
 
+<% if @display != nil %>
 <p>The Crowd says go to:</p>
 <%= link_to @display.name, @display.url, :target => "_blank" %>
+<% end %>
